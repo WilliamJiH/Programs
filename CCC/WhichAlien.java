@@ -1,17 +1,29 @@
-package CCC2017CLASS2;
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package downloads;
 import java.util.Scanner;
-
+/**
+ *
+ * @author Nathan
+ */
 public class WhichAlien {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int antena = sc.nextInt();
-		int eyes = sc.nextInt();
-		if (antena >= 3 && eyes <=4) System.out.println("TroyMartian");
-		if (antena <=6 && eyes >=2) System.out.println("VladSaturnian");
-		if (antena <=2 && antena <=3) System.out.println("GraemeMercurian");
-
-	}
-
+        public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a,e;
+        a = input.nextInt();
+        e = input.nextInt();
+        if (a>=3 && e<=4){
+            System.out.println("TroyMartian");
+        }
+        if(a<=6 && e>=2){
+            System.out.println("VladSaturnian");
+        }
+        if(a<=2 && e<=3){
+            System.out.println("GraemeMercurian");
+        }
+    }
 }
+
